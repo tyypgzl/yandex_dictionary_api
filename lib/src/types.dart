@@ -47,8 +47,7 @@ final class YandexLookupResponse {
     );
   }
 
-  /// Array of dictionary entries. A transcription of the search word may
-  /// be provided in the ts attribute.
+  /// Array of dictionary entries.
   final List<Def>? def;
 
   @override
@@ -63,6 +62,7 @@ final class Def {
   const Def({
     this.text,
     this.pos,
+    this.ts,
     this.tr,
   });
 
@@ -71,6 +71,7 @@ final class Def {
     return Def(
       text: json['text'] as String?,
       pos: json['pos'] as String?,
+      ts: json['ts'] as String?,
       tr: (json['tr'] as List<dynamic>?)
           ?.map((e) => Tr.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -86,8 +87,11 @@ final class Def {
   /// Array of translations.
   final List<Tr>? tr;
 
+  /// Transcription of the [text]
+  final String? ts;
+
   @override
-  String toString() => 'Def(text: $text,pos: $pos,tr: $tr)';
+  String toString() => 'Def(text: $text, pos: $pos, tr: $tr, ts: $ts)';
 }
 
 /// {@template yandex_lookup_response_tr}

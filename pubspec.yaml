@@ -1,6 +1,6 @@
 name: yandex_dictionary_api
 description: Package to access the Yandex.Dictionary API over HTTP.
-version: 1.0.1
+version: 1.0.2
 homepage: https://github.com/tyypgzl/yandex_dictionary_api
 issue_tracker: https://github.com/tyypgzl/yandex_dictionary_api/issues
 topics:
