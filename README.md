@@ -70,4 +70,4 @@ API throws YandexDictionaryException in incorrect cases.
 
 ## For more API documentation
 
-visit [offical API documentation](https://yandex.com/dev/dictionary/doc/dg/concepts/About.html)
+visit [offical API documentation](https://yandex.ru/dev/tech-only/doc/dg/ru/)
